@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .heading {
+            font-family: 'Cinzel', serif;
+            font-family: 'Hedvig Letters Serif', serif;
+            margin-top: 30px;
+            font-size: 65px;
+            text-align: center; 
+        }
+        .points {
+            margin-top: 20px;
+            font-size: 35px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center; 
+        }
+        .container {
+            position: relative;
+            background-image: url(./2.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            isolation: isolate;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            background: rgb(28, 26, 26);
+            z-index: -1;
+            inset: 0;
+            opacity: 0.7;
+            filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .nav-text {
+            color: #fff;
+            font-weight: bold;
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 30px;
+            margin-right: 40px;
+        }
+
+        nav img {
+            max-height: 150px;
+            margin-right: 30px;
+            margin-left: 60px;
+        }
+
+        .info {
+            padding: 20px;
+            color: #fff;
+            font-size: 20px;
+            margin-left: 20px;
+            margin-top: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .info img {
+            width: 40%;
+            height: auto;
+            margin: 30px;
+        }
+
+        .points ul {
+            backdrop-filter: blur(5px);
+        }
+
+        .info p {
+            font-family: 'Ephesis', cursive;
+        }
+        .corner{
+            margin-left: 0px;
+            margin-right: 0px;
+            max-width: 300px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="./index.html"><img src="./E V.png" alt="Logo"></a>
+            <div>
+                <a href="./index.html">Home</a>
+                <a href="./about_us.html">About Us</a>
+                <a href="./our_projects.html">Our Projects</a>
+                <a href="./contact_us.html">Contact Us</a>
+            </div>
+            <a href="./index.html"><img src="./image.png" alt="Logo" id="corner"></a>
+        </nav>
+        <div class="info">
+            <div class="heading">
+                <b><p>___Projects___</p></b>
+            </div>
+            <div class="points">
+                <img src="./img2.jpeg" alt="image">
+                <img src="./img3.jpeg" alt="image">
+                <img src="./img6.jpeg" alt="image">
+                <img src="./img8.jpeg" alt="image">
+                <img src="./img1.jpeg" alt="image">
+                <img src="./img4.jpeg" alt="image">
+                <img src="./img7.jpeg" alt="image">
+                <img src="./img5.jpeg" alt="image">
+        </div>
+    </div>
+</body>
+
+</html>
